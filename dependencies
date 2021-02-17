@@ -1,0 +1,5 @@
+# Dependencies
+* [speedtest-cli](https://github.com/sivel/speedtest-cli)
+* [telegram](https://github.com/tweepy/tweepy)
+* [SQL Database]
+* Requires a [Telegram Bot account]

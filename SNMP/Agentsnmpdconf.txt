@@ -1,0 +1,198 @@
+###########################################################################
+#
+# snmpd.conf
+# An example configuration file for configuring the Net-SNMP agent ('snmpd')
+# See snmpd.conf(5) man page for details
+#
+###########################################################################
+# SECTION: System Information Setup
+#
+
+# syslocation: The [typically physical] location of the system.
+#   Note that setting this value here means that when trying to
+#   perform an snmp SET operation to the sysLocation.0 variable will make
+#   the agent return the "notWritable" error code.  IE, including
+#   this token in the snmpd.conf file will disable write access to
+#   the variable.
+#   arguments:  location_string
+sysLocation    <<location>>
+sysContact     <<e-mail>>
+
+# sysservices: The proper value for the sysServices object.
+#   arguments:  sysservices_number
+sysServices    72
+
+
+
+###########################################################################
+# SECTION: Agent Operating Mode
+#
+#   This section defines how the agent will operate when it
+#   is running.
+
+# master: Should the agent operate as a master agent or not.
+#   Currently, the only supported master agent type for this token
+#   is "agentx".
+#   
+#   arguments: (on|yes|agentx|all|off|no)
+
+master  agentx
+
+# agentaddress: The IP address and port number that the agent will listen on.
+#   By default the agent listens to any and all traffic from any
+#   interface on the default SNMP port (161).  This allows you to
+#   specify which address, interface, transport type and port(s) that you
+#   want the agent to listen on.  Multiple definitions of this token
+#   are concatenated together (using ':'s).
+#   arguments: [transport:]port[@interface/address],...
+
+#  Listen for connections from the local system only
+#agentAddress  udp:127.0.0.1:161
+#  Listen for connections on all interfaces (both IPv4 *and* IPv6)
+agentAddress udp:161,udp6:[::1]:161
+
+
+
+###########################################################################
+# SECTION: Access Control Setup
+#
+#   This section defines who is allowed to talk to your running
+#   snmp agent.
+
+# Views 
+#   arguments viewname included [oid]
+
+						# Present entire "system.*" tree from SNMPv2-MIB (.1.3.6.1.2.1.1)
+#view systemview included system
+						# Present host.hrSystem.hrSystemUptime from HOST-RESOURCES-MIB (.1.3.6.1.2.1.25.1.1)
+#view systemview included host.hrSystem.hrSystemUptime
+						# Present extended MIB from UCD-SNMP-MIB (.1.3.6.1.4.1.2021)
+#view systemview included enterprises.ucdavis
+
+view systemview included .1 80
+
+# rocommunity: a SNMPv1/SNMPv2c read-only access community name
+#   arguments:  community [default|hostname|network/bits] [oid | -V view]
+
+# Read-only access to everyone to the systemonly view
+rocommunity <<community_name>> <<ip>> -V systemview
+#rocommunity6 <<community_name>> <<ip>> -V systemview
+
+# SNMPv3 AUTHENTICATION
+# SNMPv3 doesn't use communities, but users with (optionally) an
+# authentication and encryption string. This user needs to be created
+# with what they can view with rouser/rwuser lines in this file.
+#
+# createUser username (MD5|SHA|SHA-512|SHA-384|SHA-256|SHA-224) authpassphrase [DES|AES] [privpassphrase]
+# e.g.
+# createuser authPrivUser SHA-512 myauthphrase AES myprivphrase
+#
+# This should be put into /var/lib/snmp/snmpd.conf 
+#
+# rouser: a SNMPv3 read-only access username
+#    arguments: username [noauth|auth|priv [OID | -V VIEW [CONTEXT]]]
+
+#An SNMPv3 username is required to authorize the DisMan service.
+createUser internalUser
+iquerySecName internalUser
+rouser internalUser
+
+###########################################################################
+# SECTION: GET-RESPONSE Monitoring
+#
+#   This section defines how the agent will operate when it
+#   receives a snmp-get instruction
+
+
+
+#  Process Monitoring
+#
+# Checks to see if processes are running on the agent
+# machine. An error flag (1) and a description message are then
+# passed to the 1.3.6.1.4.1.2021.2.1.100 and
+# 1.3.6.1.4.1.2021.2.1.101 MIB columns (respectively) if the
+# program is not found in the process table as reported by
+# "/bin/ps -e".
+
+                               # At least one  'mountd' processproc  mountd
+#proc mountd
+                               # No more than 4 'ntalkd' processes - 0 is OK
+#proc  ntalkd    4
+                               # At least one 'sendmail' process, but no more than 10
+#proc  sendmail 10 1
+			       # make sure sshd is running
+proc sshd
+
+#  Walk the UCD-SNMP-MIB::prTable to see the resulting output
+#  Note that this table will be empty if there are no "proc" entries in the snmpd.conf file
+
+
+#
+#  Disk Monitoring
+#
+# Checks  the  disks  mounted  at  PATH for available disk
+# space.  If the disk space is less than MINSPACE (kB) if  speci-
+# fied  or  less than MINPERCENT (%) if a % sign is specified, or
+# DEFDISKMINIMUMSPACE (kB) if not specified, the associated entry
+# in  the  1.3.6.1.4.1.2021.9.1.100  MIB table will be set to (1)
+# and a descriptive error message will be returned to queries  of
+# 1.3.6.1.4.1.2021.9.1.101.
+                               #Check the / partition and make sure it contains at least 10 gig
+disk       /     976563
+#includeAllDisks 1%
+
+#  Walk the UCD-SNMP-MIB::dskTable to see the resulting output
+#  Note that this table will be empty if there are no "disk" entries in the snmpd.conf file
+
+
+#
+#  System Load
+#
+# Checks the load average of the machine  and  returns  an  error
+# flag  (1),  and  an  text-string  error  message  to queries of
+# 1.3.6.1.4.1.2021.10.1.100     and     1.3.6.1.4.1.2021.10.1.101
+# (respectively)  when the 1-minute, 5-minute, or 15-minute aver-
+# ages exceed the associated maximum values.
+                               # Unacceptable 1-, 5-, and 15-minute load averages
+#load   12 10 5
+load	2 1.8 1.5
+#  Walk the UCD-SNMP-MIB::laTable to see the resulting output
+#  Note that this table *will* be populated, even without a "load" entry in the snmpd.conf file
+
+
+###########################################################################
+# SECTION: TRAP Monitoring
+#
+#   This section defines how the agent will operate when it
+#   sends a trap event notification.
+
+
+                                    #   send SNMPv1  traps
+#trapsink <<ip>> <<community>>
+                                    #   send SNMPv2c traps
+trap2sink <<ip>> <<community>>
+                                    #   send SNMPv2c INFORMs
+#informsink   localhost public
+
+#  Note that you typically only want *one* of these three lines
+#  Uncommenting two (or all three) will result in multiple copies of each notification.
+
+
+#
+#  Event MIB - automatically generate alerts
+#
+                                   # generate traps on UCD error conditions
+defaultMonitors          yes
+                                   # generate traps on linkUp/Down
+linkUpDownNotifications  yes
+				#generate a trap when free memory drops below 1,000,000KB. The free memory trap also includes the amount of total real memory.
+monitor -r 60 RamAlmostFull -o memTotalReal  memAvailReal < 1000000
+#monitor -r 60 RamAlmostFull -o memTotalReal memTotalFree <  9000000
+				#generate a trap when the 1 minute interval reaches 90%, the 5 minute interval reaches 70% or the 15 minute interval reaches 50%.
+monitor -r 30 ProcessorTooBusy -o laNames -o laErrMessage "laTable" laErrorFlag !=0
+#monitor -r 30 ProcessorTooBusy hrProcessorLoad > 20
+				#generate a trap when a disk is 90% full.
+#monitor -r 60 -o dskPath -o DiskErrMsg "UCD-SNMP-MIB::dskTable" diskErrorFlag !=0
+monitor -r 60 DiskAlmostFull dskPercent > 90
+				#generate authentication failure traps
+authtrapenable 1
