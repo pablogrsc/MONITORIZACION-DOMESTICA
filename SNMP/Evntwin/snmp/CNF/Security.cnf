@@ -1,0 +1,230 @@
+#pragma add "Security" "Microsoft-Windows-Eventlog" 3489660929 1 0
+#pragma add "Security" "Microsoft-Windows-Eventlog" 3489660930 1 0
+#pragma add "Security" "Microsoft-Windows-Eventlog" 3489660931 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952794632 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952794670 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952794672 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952794677 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952794704 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952794832 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952795141 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952795156 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952795172 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952795173 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952795467 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952795468 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952795648 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952796288 1 0
+#pragma add "Security" "Microsoft-Windows-Security-Auditing" 2952796289 1 0
+#pragma add "Security" "Security" 2 1 0
+#pragma add "Security" "Security" 6 1 0
+#pragma add "Security" "Security" 512 1 0
+#pragma add "Security" "Security" 513 1 0
+#pragma add "Security" "Security" 516 1 0
+#pragma add "Security" "Security" 517 1 0
+#pragma add "Security" "Security" 523 1 0
+#pragma add "Security" "Security" 529 1 0
+#pragma add "Security" "Security" 530 1 0
+#pragma add "Security" "Security" 531 1 0
+#pragma add "Security" "Security" 532 1 0
+#pragma add "Security" "Security" 533 1 0
+#pragma add "Security" "Security" 534 1 0
+#pragma add "Security" "Security" 535 1 0
+#pragma add "Security" "Security" 536 1 0
+#pragma add "Security" "Security" 537 1 0
+#pragma add "Security" "Security" 538 1 0
+#pragma add "Security" "Security" 601 1 0
+#pragma add "Security" "Security" 619 1 0
+#pragma add "Security" "Security" 624 1 0
+#pragma add "Security" "Security" 626 1 0
+#pragma add "Security" "Security" 629 1 0
+#pragma add "Security" "Security" 630 1 0
+#pragma add "Security" "Security" 631 1 0
+#pragma add "Security" "Security" 632 1 0
+#pragma add "Security" "Security" 633 1 0
+#pragma add "Security" "Security" 634 1 0
+#pragma add "Security" "Security" 635 1 0
+#pragma add "Security" "Security" 636 1 0
+#pragma add "Security" "Security" 637 1 0
+#pragma add "Security" "Security" 638 1 0
+#pragma add "Security" "Security" 639 1 0
+#pragma add "Security" "Security" 642 1 0
+#pragma add "Security" "Security" 643 1 0
+#pragma add "Security" "Security" 644 1 0
+#pragma add "Security" "Security" 645 1 0
+#pragma add "Security" "Security" 646 1 0
+#pragma add "Security" "Security" 647 1 0
+#pragma add "Security" "Security" 648 1 0
+#pragma add "Security" "Security" 649 1 0
+#pragma add "Security" "Security" 650 1 0
+#pragma add "Security" "Security" 651 1 0
+#pragma add "Security" "Security" 652 1 0
+#pragma add "Security" "Security" 653 1 0
+#pragma add "Security" "Security" 654 1 0
+#pragma add "Security" "Security" 655 1 0
+#pragma add "Security" "Security" 656 1 0
+#pragma add "Security" "Security" 657 1 0
+#pragma add "Security" "Security" 658 1 0
+#pragma add "Security" "Security" 659 1 0
+#pragma add "Security" "Security" 660 1 0
+#pragma add "Security" "Security" 661 1 0
+#pragma add "Security" "Security" 662 1 0
+#pragma add "Security" "Security" 663 1 0
+#pragma add "Security" "Security" 664 1 0
+#pragma add "Security" "Security" 665 1 0
+#pragma add "Security" "Security" 666 1 0
+#pragma add "Security" "Security" 667 1 0
+#pragma add "Security" "Security" 668 1 0
+#pragma add "Security" "Security" 671 1 0
+#pragma add "Security" "Security" 698 1 0
+#pragma add "Security" "Security" 704 1 0
+#pragma add "Security" "Security" 707 1 0
+#pragma add "Security" "Security" 720 1 0
+#pragma add "Security" "Security" 729 1 0
+#pragma add "Security" "Security" 859 1 0
+#pragma add "Security" "Security" 870 1 0
+#pragma add "Security" "Security" 871 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356545 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422081 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221487617 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356546 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422082 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221487618 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221618690 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422083 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221487619 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356547 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356548 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422084 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221487620 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221618692 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356549 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422085 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221487621 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356550 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422086 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221487622 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221618694 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356551 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221487623 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422087 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356552 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221487624 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221618696 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422088 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356553 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221487625 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422089 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356554 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221618698 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422090 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356555 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422091 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422092 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356556 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422093 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356557 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422094 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356558 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422095 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356559 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422096 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356560 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422097 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356561 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422098 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356562 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422099 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356563 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422100 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356564 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422101 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356565 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356566 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221422102 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356567 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356568 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356569 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356570 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221356571 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221291108 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221291109 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221291110 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221291111 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221291112 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221291113 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221291114 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221291115 1 0
+#pragma add "Security" "ServiceModel 3.0.0.0" 3221291116 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356545 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422081 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221487617 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356546 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422082 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221487618 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221618690 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422083 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221487619 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356547 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356548 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422084 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221487620 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221618692 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356549 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422085 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221487621 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356550 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422086 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221487622 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221618694 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356551 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221487623 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422087 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356552 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221487624 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221618696 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422088 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356553 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221487625 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422089 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356554 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221618698 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422090 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356555 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422091 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422092 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356556 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422093 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356557 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422094 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356558 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422095 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356559 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422096 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356560 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422097 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356561 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422098 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356562 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422099 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356563 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422100 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356564 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422101 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356565 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356566 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221422102 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356567 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356568 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356569 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356570 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221356571 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221291108 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221291109 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221291110 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221291111 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221291112 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221291113 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221291114 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221291115 1 0
+#pragma add "Security" "ServiceModel 4.0.0.0" 3221291116 1 0

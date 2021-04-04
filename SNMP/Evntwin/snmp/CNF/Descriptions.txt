@@ -1,0 +1,56 @@
+*DESCRIPTIONS OF THE CONF FILES*
+--------------------------------------------------------------------------------------------------
+"AppExchange2013 - Alarms for Exchange 2013 general and Information Store alarms, e.g. store full, 
+corrupted data, etc." (NO APLICA)
+Microsoft Exchange Server es un sistema de mensajería que incluye un servidor de correo,
+un programa de correo electrónico y diversas aplicaciones de trabajo en grupo. Se trata,
+básicamente, de un producto de software de colaboración entre usuarios desarrollado por Microsoft.
+Es parte de la línea de productos para servidores Microsoft Servers y es ampliamente utilizado por
+las grandes empresas.
+--------------------------------------------------------------------------------------------------
+"App GP - Group Policy alarms, e.g. failed policies, etc"
+Directiva de grupo a menudo se utiliza para restringir ciertas acciones que pueden presentar riesgos
+de seguridad potenciales, por ejemplo: Bloquear el acceso al Administrador de tareas, restringir el
+acceso a determinadas carpetas, deshabilitar la descarga de archivos ejecutables, etc.
+Directiva de Grupo es más frecuente en el uso de entornos empresariales, es también común en las
+escuelas, las pequeñas empresas y otros tipos de organizaciones más pequeñas.
+--------------------------------------------------------------------------------------------------
+"AppSystem - System alarms"
+--------------------------------------------------------------------------------------------------
+"AppWinBak - Windows backup alarms, e.g. Windows backup failures, etc."
+--------------------------------------------------------------------------------------------------
+"DCDNS - DNS alarms for domain controllers, i.e. DNS errors" (NO APLICA)
+Alarmas DNS para controladores de dominio. 
+--------------------------------------------------------------------------------------------------
+"DCNTDS - NTDS alarms for domain controllers, i.e. AD replication" (NO APLICA)
+NTDS: El controlador de dominio entonces crea un repositorio centralizado de contraseñas, que están
+enlazados a los nombres de usuarios (una clave por usuario). Garantiza o denega a un usuario el acceso
+a recursos compartidos o a otra máquina de la red
+--------------------------------------------------------------------------------------------------
+"DFSR - Several files covering different facets of Distributed File Systems, e.g. file replication 
+errors, dirty database shutdown errors, etc."(NO APLICA)
+--------------------------------------------------------------------------------------------------
+"HyperV - several files covering different facets of Hyper V such as failed HyperV initializations, 
+memory problems, HyperV Replica errors, etc" (NO APLICA)
+HyperV: El VMware o VirtualBox de windows.
+Alarmas sobre acceso y funcionamiento de los sistemas virtuales. (Máquinas virtuales)
+--------------------------------------------------------------------------------------------------
+"IIS" "IISW3 - Internet Information Service"
+IIS: Este servicio convierte a un PC en un servidor web para Internet o una intranet, es decir que 
+en los ordenadores que tienen este servicio instalado se pueden publicar páginas web tanto local como 
+remotamente
+--------------------------------------------------------------------------------------------------
+"KMS - Key Management systems alarms" (NO APLICA)
+KMS: Para activar las versiones de Office con licencia por volumen, como Project y Visio, debe tener
+un equipo host del servicio de administración de claves (KMS). 
+--------------------------------------------------------------------------------------------------
+"Security - Security event notifications, e.g. failed logins, users and group security changes, etc."
+--------------------------------------------------------------------------------------------------
+"SharePointServices, SQLSharepointExpress" - Alerts for Microsoft SharePoint.
+--------------------------------------------------------------------------------------------------
+"SystemTerminalServices - Remote Desktop Services alarms"
+--------------------------------------------------------------------------------------------------
+"SystemMSWindows - Driver and hardware problems, corrupted disk sectors, NTFS errors, etc."
+--------------------------------------------------------------------------------------------------
+"System UEFI - UEFI alarms"
+--------------------------------------------------------------------------------------------------
