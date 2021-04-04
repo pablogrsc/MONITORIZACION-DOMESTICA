@@ -9,14 +9,14 @@ import SnmpStorage
 
 
 def insert_db(values):
-        cn = mysql.connector.connect(host="127.0.0.1", database="homemonitor_db", user="XXX", password="XXX", auth_plugin="mysql_native_password")
+        cn = mysql.connector.connect(host="127.0.0.1", database="homemonitor_db", user="pi", password="castellar", auth_plugin="mysql_native_password")
         sql_executer = cn.cursor()
 
-        aql1 = "INSERT INTO snmp_windows (hour, hostname, cpu_usage, ram_total, disk_total, disk_used, disk_free, disk_percent) VALUES ("
+        aql1 = "INSERT INTO snmp_windows (hour, hostname, cpu_usage, ram_total, ram_used, disk_total, disk_used, disk_free, disk_percent) VALUES ("
         aql2 = ""
         for i in range (len(values)):
             values[i] = "\"" + str(values[i]) + "\""
-            if (i!=7):
+            if (i!=8):
                 values[i] += ","
             aql2 = aql2 + values[i]
         aql = aql1 + aql2 + ");"
@@ -45,7 +45,8 @@ if __name__ == '__main__':
         cpu_value = cpu.monitor_cpu(config.windows_target_addresses[i], config.community)
         time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         hostname = gethostname(config.windows_target_addresses[i])
+        print (ram_value[1])
 
-        values = [time, hostname, str(cpu_value), str(ram_value), str(disk_value[0]), str(disk_value[1]), str(disk_value[2]), str(disk_value[3])]
+        values = [time, hostname, str(cpu_value), str(ram_value[0]), str(ram_value[1]), str(disk_value[0]), str(disk_value[1]), str(disk_value[2]), str(disk_value[3])]
 
         insert_db(values)
