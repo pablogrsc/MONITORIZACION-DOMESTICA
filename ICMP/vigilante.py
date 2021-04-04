@@ -56,7 +56,7 @@ class Vigilante():
         r = requests.post(url, data)
 
     def insert_db(self, values):
-        cn = mysql.connector.connect(host="127.0.0.1", database="homemonitor_db", user="pi", password="castellar", auth_plugin="mysql_native_password")
+        cn = mysql.connector.connect(host="127.0.0.1", database="xx", user="xx", password="xx", auth_plugin="mysql_native_password")
         sql_executer = cn.cursor()
 
         aql1 = "INSERT INTO hosts (hostname, ip, mac) VALUES ("
