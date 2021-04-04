@@ -59,6 +59,6 @@ class SnmpStorageLinux():
         return self.disk;
 
 
-if __name__ == '__main__':
-    monitor = SnmpStorageLinux()
-    monitor.monitor_storage(config.target_address, config.community)
+#if __name__ == '__main__':
+#    monitor = SnmpStorageLinux()
+#    monitor.monitor_storage(config.target_address, config.community)
