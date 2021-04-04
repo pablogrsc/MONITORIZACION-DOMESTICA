@@ -9,7 +9,7 @@ import SnmpStorage
 
 
 def insert_db(values):
-        cn = mysql.connector.connect(host="127.0.0.1", database="homemonitor_db", user="pi", password="castellar", auth_plugin="mysql_native_password")
+        cn = mysql.connector.connect(host="127.0.0.1", database="xx", user="xx", password="xx", auth_plugin="mysql_native_password")
         sql_executer = cn.cursor()
 
         aql1 = "INSERT INTO snmp_windows (hour, hostname, cpu_usage, ram_total, ram_used, disk_total, disk_used, disk_free, disk_percent) VALUES ("
