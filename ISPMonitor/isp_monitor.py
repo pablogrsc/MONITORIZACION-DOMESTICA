@@ -73,24 +73,28 @@ class ISPMonitor():
         self.token = data['token']
         self.channel_id = data['channel_id']
 
-    def send_warning(self, uptime, results):
+    def send_warning(self, text):
         url = 'https://api.telegram.org/bot{0}/sendMessage'.format(self.token)
-        data = {'chat_id': self.channel_id, 'text': self.mount_status(uptime,results)}
+        data = {'chat_id': self.channel_id, 'text': text}
         r = requests.post(url, data)
 
     def mount_status(self, uptime, results):
         ping, down, down_ratio, up, up_ratio, url = results
+        reaction=self.get_reaction(down_ratio, up_ratio, ping)
         worst_ratio = min(down_ratio, up_ratio)
-        return config.telegram_message.format(
+        text = config.telegram_message.format(
             provider=config.provider,
             down=down,
             up=up,
             ping=ping,
             ratio=worst_ratio * 100,
             uptime=uptime,
-            reaction=self.get_reaction(down_ratio, up_ratio, ping),
+            reaction=reaction,
             url=url,
         )
+        bad_reactions = ['Mala','Terrible','Ilegal']
+        if (reaction in (bad_reactions)):
+            self.send_warning(text)
 
     def get_reaction(self, down_ratio, up_ratio, ping):
         if ping > config.movistar['ping'] \
@@ -112,7 +116,7 @@ class ISPMonitor():
         worst_legal = min(config.movistar['down_ratio'], config.movistar['up_ratio'])
         best_legal = 1.0
         coefficient = (0 - max_idx) / (worst_legal - best_legal)
-        idx = coefficient * (worst_ratio - worst_legal)
+        idx = coefficient * (worst_ratio - worst_legal) #coefficient = 8,3
         message_idx = min(int(math.ceil(idx)), max_idx)
         return messages[message_idx]
 
@@ -152,7 +156,7 @@ if __name__ == '__main__':
         isp.run_test()
 
         results = isp.parse_results()
-        isp.send_warning(uptime, results)
+        isp.mount_status(uptime, results)
 
         results.insert(0, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
